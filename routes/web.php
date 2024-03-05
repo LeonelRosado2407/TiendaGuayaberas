@@ -20,3 +20,10 @@ Route::get('/', function () {
 Route::get('/example', function () {
     return view('pages.example');
 });
+Route::get('/career', function () {
+    return view('pages.Shop.carrito');
+});
+Route::get('/listado', function () {
+    return view('pages.Productos.listado');
+});
+
