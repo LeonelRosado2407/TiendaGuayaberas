@@ -8,7 +8,7 @@
         <ul class="hidden lg:flex items-center gap-10">
           <li><a href="#" class="text-white text-sm font-medium hover:text-opacity-80 transition duration-200">Home</a></li>
           <li><a href="#" class="text-white text-sm font-medium hover:text-opacity-80 transition duration-200">Shop</a></li>
-          <li><a href="#" class="text-white text-sm font-medium hover:text-opacity-80 transition duration-200">Product</a></li>
+          <li><a href="{{route('productos.index')}}" class="text-white text-sm font-medium hover:text-opacity-80 transition duration-200">Product</a></li>
           <li><a href="#" class="text-white text-sm font-medium hover:text-opacity-80 transition duration-200">Career</a></li>
         </ul>
         <div class="hidden lg:block absolute transform left-1/2 -translate-x-1/2">

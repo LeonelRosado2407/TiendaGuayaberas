@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\shop;
 
 use App\Http\Controllers\Controller;
+use App\Models\Productos;
 use Illuminate\Http\Request;
 
 class ProductosController extends Controller
@@ -12,7 +13,10 @@ class ProductosController extends Controller
      */
     public function index()
     {
-        //
+        $Productos = Productos::all();
+        return view('pages.Productos.listado',[
+            'Productos' => $Productos
+        ]);
     }
 
     /**
@@ -20,7 +24,10 @@ class ProductosController extends Controller
      */
     public function create()
     {
-        //
+        $producto = new Productos();
+        return view('pages.Productos.formulario',[
+            'producto' => $producto
+        ]);
     }
 
     /**
