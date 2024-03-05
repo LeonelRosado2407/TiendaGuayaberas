@@ -1,5 +1,3 @@
-//todo lo relaconado con el navbar
-<nav>
 <div x-data="{ mobileNavOpen: false }">
   <nav class="bg-black relative py-4 shadow-lg">
     <div class="container mx-auto px-4">
@@ -85,4 +83,3 @@
     </nav>
   </div>
 </div>
-</nav>
