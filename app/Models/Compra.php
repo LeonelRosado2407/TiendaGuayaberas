@@ -8,4 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class Compra extends Model
 {
     use HasFactory;
+    protected $table = 'compra';
+    protected $primaryKey = 'id_compra';
+    public $timestamps = false;
+    protected $fillable = [
+        'total', 
+        'fecha', 
+        'id_usuario', 
+    ];
 }
