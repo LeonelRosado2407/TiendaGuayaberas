@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\shop\ProductosController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,6 +21,12 @@ Route::get('/', function () {
 Route::get('/example', function () {
     return view('pages.example');
 });
+
+Route::get('/nav', function () {
+    return view('layouts.navbar');
+});
+
+Route::resource('productos', [ProductosController::class])->names('productos');
 Route::get('/career', function () {
     return view('pages.Shop.carrito');
 });
