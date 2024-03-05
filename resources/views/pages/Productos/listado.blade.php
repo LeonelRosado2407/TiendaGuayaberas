@@ -52,7 +52,7 @@
                 <td class="flex px-4 py-3">
                     <img class="w-32 h-32 mr-4 object-cover rounded-md" src="https://images.unsplash.com/photo-1559893088-c0787ebfc084?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="">
                 </td>
-                <td class="font-medium">{{$producto->}}</td>
+                <td class="font-medium">{{$producto->nombre}}</td>
                 <td>
                 <span class="inline-block py-1 px-2 text-white bg-green-500 rounded-full">Paid</span>
                 </td>
