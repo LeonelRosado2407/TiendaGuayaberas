@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     @vite('resources/css/app.css') {{-- incluyan el css --}}
+    @vite('resources/js/app.js') {{-- incluyan el js --}}
     @yield('extra-css')
 </head>
 <body>
