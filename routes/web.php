@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/example', function () {
     return view('pages.example');
 });
+
+Route::get('/nav', function () {
+    return view('layouts.navbar');
+});
