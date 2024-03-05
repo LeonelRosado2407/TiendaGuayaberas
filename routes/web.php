@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\shop\CarritoController;
 use App\Http\Controllers\shop\ProductosController;
 use Illuminate\Support\Facades\Route;
 
@@ -26,5 +27,10 @@ Route::get('/produc', function () {
 Route::get('/home',[HomeController::class,'index'])->name('home');
 
 Route::resource('productos', ProductosController::class)->names('productos');
+
+Route::get("/micarrito",[CarritoController::class, "mostrarcarrito"])->name('carrito');
+
+
+Route::get("/listado/productos",[CarritoController::class, "mostrarproductos"])->name('listaproducto');
 
 

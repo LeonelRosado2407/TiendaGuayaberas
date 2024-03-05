@@ -23,13 +23,7 @@
               </div>
               <div class="py-2">
                 <div class="flex items-center flex-wrap gap-1 mb-1">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewbox="0 0 16 17" fill="none">
-                    <g clip-path="url(#clip0_249_3699)">
-                      <path d="M7.99999 12.6733L3.29799 15.3053L4.34799 10.02L0.391327 6.36131L5.74266 5.72665L7.99999 0.833313L10.2573 5.72665L15.6087 6.36131L11.652 10.02L12.702 15.3053L7.99999 12.6733Z" fill="#FFA800"></path>
-                    </g>
-                    <defs><clippath><rect width="16" height="16" fill="white" transform="translate(0 0.5)"></rect></clippath></defs>
-                  </svg>
-                  <span class="text-gray-500 text-sm font-semibold">4.9</span>
+                  <span class="text-gray-500 text-sm font-semibold">Nuevo modelo</span>
                 </div>
                 <h3 class="font-heading uppercase text-3xl ">Jacket Winter</h3>
                 <h2 class="text-red-700 font-heading text-5xl">$500</h2>
