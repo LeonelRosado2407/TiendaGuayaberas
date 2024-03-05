@@ -25,3 +25,16 @@ Route::get('/example', function () {
 Route::get('/home', function () {
     return view('pages.home.home');
 });
+
+Route::get('/career', function () {
+    return view('pages.Shop.carrito');
+});
+
+Route::get('/listado', function () {
+    return view('pages.Productos.listado');
+});
+
+
+Route::resource('productos', ProductosController::class)->names('productos');
+
+
