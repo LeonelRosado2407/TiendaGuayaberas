@@ -19,6 +19,10 @@ Route::get('/', function () {
     return view('pages.home.home');
 });
 
+Route::get('/produc', function () {
+    return view('pages.shop.productoslist');
+});
+
 Route::get('/home',[HomeController::class,'index'])->name('home');
 
 Route::resource('productos', ProductosController::class)->names('productos');
