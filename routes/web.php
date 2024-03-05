@@ -21,6 +21,6 @@ Route::get('/example', function () {
     return view('pages.example');
 });
 
-Route::get('/nav', function () {
-    return view('layouts.navbar');
+Route::get('/home', function () {
+    return view('pages.home.home');
 });
