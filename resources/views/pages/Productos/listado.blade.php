@@ -30,7 +30,25 @@
         </ul>
     </div>
 
-    <div class="container px-4 mx-auto">
+    <div class="p-6 border-b border-coolGray-100">
+      <div class="flex flex-wrap items-center justify-between -m-2">
+        <div class="w-full md:w-auto p-2">
+          <h2 class="text-coolGray-900 text-lg font-semibold">Productos</h2>
+          <p class="text-xs text-coolGray-500 font-medium">Guayaberas y así</p>
+        </div>
+        <div class="w-full md:w-auto p-2">
+          <div class="w-full md:w-60 p-1.5">
+            <a
+              href="{{route('productos.create')}}"
+              class="flex flex-wrap justify-center w-full px-4 py-2 bg-green-500 hover:bg-green-600 font-medium text-sm text-white border border-green-500 rounded-md shadow-button">
+              <p>agregar Producto</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container px-4 mx-auto mt-10">
       <div class="p-4 mb-6 bg-white shadow rounded overflow-x-auto">
         <table class="table-auto w-full">
           <thead>
@@ -50,15 +68,18 @@
             <tr class="text-xs bg-gray-50">
                 <td class="py-5 px-6 font-medium">#{{$producto->id_producto}}</td>
                 <td class="flex px-4 py-3">
-                    <img class="w-32 h-32 mr-4 object-cover rounded-md" src="https://images.unsplash.com/photo-1559893088-c0787ebfc084?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="">
+                    <img class="w-32 h-32 mr-4 object-cover rounded-md" src="{{$producto->foto}}" alt="">
                 </td>
                 <td class="font-medium">{{$producto->nombre}}</td>
-                <td>
-                <span class="inline-block py-1 px-2 text-white bg-green-500 rounded-full">Paid</span>
+                <td class="font-medium">{{$producto->precio}}</td>
+                <td class="font-medium">{{$producto->talla}}</td>
+                <td class="font-medium">{{$producto->stock}}</td>
+                {{-- <td>
+                  <span class="inline-block py-1 px-2 text-white bg-green-500 rounded-full">{{$producto->precio}} </span>
                 </td>
                 <td>
-                <span class="inline-block py-1 px-2 text-purple-500 bg-purple-50 rounded-full">Monthly Subscription</span>
-                </td>
+                  <span class="inline-block py-1 px-2 text-purple-500 bg-purple-50 rounded-full">{{$producto->talla}} </span>
+                </td> --}}
                 <td>
                 <a class="inline-block mr-2" href="#">
                     <svg width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
