@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\shop\ProductosController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,3 +25,5 @@ Route::get('/example', function () {
 Route::get('/nav', function () {
     return view('layouts.navbar');
 });
+
+Route::resource('productos', [ProductosController::class])->names('productos');
