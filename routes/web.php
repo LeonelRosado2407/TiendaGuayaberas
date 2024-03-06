@@ -32,5 +32,6 @@ Route::get("/micarrito",[CarritoController::class, "mostrarcarrito"])->name('car
 
 
 Route::get("/listado/productos",[CarritoController::class, "mostrarproductos"])->name('listaproducto');
+Route::get('/addToCart/{id}', [CarritoController::class, "agregarcarrito"])->name('addToCart');
 
 
