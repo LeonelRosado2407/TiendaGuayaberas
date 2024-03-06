@@ -28,7 +28,9 @@ class CarritoController extends Controller
             $producto->foto = $this->getImage($producto->id_producto);
         }
 
-        return view('pages.shop.productoslist', $productos);
+        // dd($productos);
+
+        return view('pages.shop.productoslist', ["productos"=>$productos]);
     }
 
     public function getImage($id){
@@ -52,6 +54,13 @@ class CarritoController extends Controller
         }
 
         return $imagenUrl;
+    }
+
+    public function agregarcarrito(Request $request){
+
+        dd($request->input('id_producto'));
+    
+       
     }
 
 
