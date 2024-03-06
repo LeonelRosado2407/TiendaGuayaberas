@@ -4,6 +4,7 @@ namespace App\Http\Controllers\shop;
 
 use App\Http\Controllers\Controller;
 use App\Models\Productos;
+use App\Models\carrito;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
@@ -12,6 +13,9 @@ class CarritoController extends Controller
     //
     public function mostrarcarrito(){
         
+        $micarrito = Carrito::all();
+
+        dd($micarrito);
 
         return view('pages.shop.carrito');
     }
