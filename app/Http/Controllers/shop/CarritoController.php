@@ -16,7 +16,7 @@ class CarritoController extends Controller
         
         $micarrito = Carrito::all();
 
-        dd($micarrito);
+        // dd($micarrito);
 
         return view('pages.shop.carrito');
     }
